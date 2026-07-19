@@ -26,5 +26,6 @@ class CounterNotifier extends Notifier<CounterState>{
         history: [...state.history, newEntry]);
   }
 
-
 }
+
+final counterProvider = NotifierProvider<CounterNotifier, CounterState>(CounterNotifier.new);
